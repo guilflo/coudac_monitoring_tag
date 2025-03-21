@@ -1,0 +1,628 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2025-03-21 10:18:42",
+    "containerVersion": {
+        "path": "accounts/6255049227/containers/198780125/versions/0",
+        "accountId": "6255049227",
+        "containerId": "198780125",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6255049227/containers/198780125",
+            "accountId": "6255049227",
+            "containerId": "198780125",
+            "name": "les Enfants Sauvages - ServerSide",
+            "publicId": "GTM-PNZDVGKZ",
+            "usageContext": [
+                "SERVER"
+            ],
+            "fingerprint": "1730282833270",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6255049227/containers/198780125/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": true,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": true
+            },
+            "tagIds": [
+                "GTM-PNZDVGKZ"
+            ],
+            "taggingServerUrls": [
+                "https://cdc.lesenfantssauvages.bio"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "tagId": "90",
+                "name": "Coudac Monitoring Tag",
+                "type": "cvt_198780125_86",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "date",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "dateFieldName",
+                        "value": "date"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gcpProjectId",
+                        "value": "{{Coudac Monitoring Tag - project_id}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "datasetId",
+                        "value": "{{Coudac Monitoring Tag - dataset_id}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tableId",
+                        "value": "{{Coudac Monitoring Tag - table_id}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "attributesList",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "field",
+                                        "value": "event"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Event Name}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "field",
+                                        "value": "client_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Coudac Monitoring Tag - Client Name}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "field",
+                                        "value": "sha256_email"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{sha256_email}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "field",
+                                        "value": "sha256_phone_number"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{sha256_phone_number}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "field",
+                                        "value": "conversion_value"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ed - value}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "field",
+                                        "value": "conversion_currency"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ed - currency}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "field",
+                                        "value": "conversion_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{ed - transaction_id}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "timestamp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1742551788974",
+                "firingTriggerId": [
+                    "74"
+                ],
+                "parentFolderId": "87",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "triggerId": "74",
+                "name": "Coudac Monitoring Tag Trigger",
+                "type": "ALWAYS",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Client Name}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "GA4"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Coudac Monitoring Tag Event Filter}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1742551421479",
+                "parentFolderId": "87"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "5",
+                "name": "user_data.email",
+                "type": "ed",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "keyPath",
+                        "value": "user_data.email"
+                    }
+                ],
+                "fingerprint": "1742552102916",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "8",
+                "name": "user_data.phone_number",
+                "type": "ed",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "keyPath",
+                        "value": "user_data.phone_number"
+                    }
+                ],
+                "fingerprint": "1742552111858",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "14",
+                "name": "ed - value",
+                "type": "ed",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "keyPath",
+                        "value": "value"
+                    }
+                ],
+                "fingerprint": "1742552132153",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "22",
+                "name": "ed - currency",
+                "type": "ed",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "keyPath",
+                        "value": "currency"
+                    }
+                ],
+                "fingerprint": "1742552132153",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "35",
+                "name": "ed - transaction_id",
+                "type": "ed",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "keyPath",
+                        "value": "transaction_id"
+                    }
+                ],
+                "fingerprint": "1742552132177",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "76",
+                "name": "Coudac Monitoring - client_side_id",
+                "type": "ed",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "keyPath",
+                        "value": "client_side_id"
+                    }
+                ],
+                "fingerprint": "1742552220095",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "77",
+                "name": "Coudac Monitoring Tag - project_id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "datacoudac"
+                    }
+                ],
+                "fingerprint": "1742551501341",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "78",
+                "name": "Coudac Monitoring Tag - dataset_id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "monitoring"
+                    }
+                ],
+                "fingerprint": "1742551493918",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "79",
+                "name": "Coudac Monitoring - table_id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "purchases_tracking"
+                    }
+                ],
+                "fingerprint": "1742552220125",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "84",
+                "name": "sha256_email",
+                "type": "cvt_NFBZ7",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{user_data.email}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "encoding",
+                        "value": "hex"
+                    }
+                ],
+                "fingerprint": "1742551300257",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "85",
+                "name": "sha256_phone_number",
+                "type": "cvt_NFBZ7",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{user_data.phone_number}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "encoding",
+                        "value": "hex"
+                    }
+                ],
+                "fingerprint": "1742551300258",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "88",
+                "name": "Coudac Monitoring Tag - table_id",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "conversion_tracking"
+                    }
+                ],
+                "fingerprint": "1742551511183",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "89",
+                "name": "Coudac Monitoring Tag - Client Name",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "XXXXXXXXXXX"
+                    }
+                ],
+                "fingerprint": "1742552220094",
+                "parentFolderId": "87",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "variableId": "91",
+                "name": "Coudac Monitoring Tag Event Filter",
+                "type": "smm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Event Name}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "purchase"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "generate_lead"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1742552059167",
+                "parentFolderId": "87",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "folderId": "87",
+                "name": "Coudac Monitoring Tag",
+                "fingerprint": "1742550746900"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "type": "CLIENT_NAME",
+                "name": "Client Name"
+            }
+        ],
+        "fingerprint": "1742552322472",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6255049227/containers/198780125/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "templateId": "83",
+                "name": "sha256 Hasher",
+                "fingerprint": "1741189218019",
+                "templateData": "___TERMS_OF_SERVICE___\n\nBy creating or modifying this file you agree to Google Tag Manager's Community\nTemplate Gallery Developer Terms of Service available at\nhttps://developers.google.com/tag-manager/gallery-tos (or such other URL as\nGoogle may provide), as modified from time to time.\n\n\n___INFO___\n\n{\n  \"type\": \"MACRO\",\n  \"id\": \"cvt_NFBZ7\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"categories\": [\n    \"UTILITY\"\n  ],\n  \"__wm\": \"VGVtcGxhdGUtQXV0aG9yX3NoYTI1Nkhhc2hlci1TaW1vLUFoYXZh\",\n  \"displayName\": \"sha256 Hasher\",\n  \"description\": \"Use this variable to hash any input value with SHA256.\",\n  \"containerContexts\": [\n    \"SERVER\"\n  ],\n  \"brand\": {\n    \"displayName\": \"gtm-templates-simo-ahava\",\n    \"id\": \"github.com_gtm-templates-simo-ahava\"\n  }\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"input\",\n    \"displayName\": \"Value to hash\",\n    \"simpleValueType\": true,\n    \"valueValidators\": [\n      {\n        \"type\": \"NON_EMPTY\"\n      }\n    ]\n  },\n  {\n    \"type\": \"RADIO\",\n    \"name\": \"encoding\",\n    \"displayName\": \"Output encoding\",\n    \"radioItems\": [\n      {\n        \"value\": \"base64\",\n        \"displayValue\": \"base64\"\n      },\n      {\n        \"value\": \"hex\",\n        \"displayValue\": \"hex\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"defaultValue\": \"base64\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_SERVER___\n\nconst sha256Sync = require('sha256Sync');\n\nif (!data.input) return;\n\nreturn sha256Sync(data.input, {outputEncoding: data.encoding});\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 11/02/2021, 10:52:38\n\n\n",
+                "galleryReference": {
+                    "host": "github.com",
+                    "owner": "gtm-templates-simo-ahava",
+                    "repository": "sha256-hasher",
+                    "version": "d29bbb97b35ac95da6d9fb5477c7dee08e346af7",
+                    "signature": "79915d54bebd6a94713df27fc4ca8e018ec8b701b24f66589aa73f8d7521c675",
+                    "galleryTemplateId": "NFBZ7"
+                }
+            },
+            {
+                "accountId": "6255049227",
+                "containerId": "198780125",
+                "templateId": "86",
+                "name": "Coudac Monitoring Tag",
+                "fingerprint": "1742551657608",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"TAG\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Coudac Monitoring Tag\",\n  \"brand\": {\n    \"id\": \"brand_dummy\",\n    \"displayName\": \"\",\n    \"thumbnail\": \"data:image/png;base64,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AACUcMnbVQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAABKEHIAAAAAJQg5AAAAgBKEHAAAAEAJQg4AAACgBCEHAAAAUIKQAwAAAChByAEAAACUIOQAAAAAShByAAAAACUIOQAAAIAShBwAAABACUIOAAAAoAQhBwAAAFCCkAMAAAAoQcgBAAAAlCDkAAAAAEoQcgAAAAAlCDkAAACAEoQcAAAAQAlCDgAAAKAEIQcAAABQgpADAAAAKEHIAQAAAJQg5AAAAADGr+u6/w/JLYg0VfupNgAAAABJRU5ErkJggg\\u003d\\u003d\"\n  },\n  \"description\": \"Writes Data from GTM to BigQuery Coudac DB.\",\n  \"containerContexts\": [\n    \"SERVER\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"GROUP\",\n    \"name\": \"GCP data\",\n    \"displayName\": \"Provide your Google Cloud Project information\",\n    \"groupStyle\": \"NO_ZIPPY\",\n    \"subParams\": [\n      {\n        \"type\": \"TEXT\",\n        \"name\": \"gcpProjectId\",\n        \"displayName\": \"GCP Project ID\",\n        \"simpleValueType\": true,\n        \"valueValidators\": [\n          {\n            \"type\": \"NON_EMPTY\"\n          }\n        ]\n      },\n      {\n        \"type\": \"TEXT\",\n        \"name\": \"datasetId\",\n        \"displayName\": \"BigQuery Dataset ID\",\n        \"simpleValueType\": true,\n        \"valueValidators\": [\n          {\n            \"type\": \"NON_EMPTY\"\n          }\n        ]\n      },\n      {\n        \"type\": \"TEXT\",\n        \"name\": \"tableId\",\n        \"displayName\": \"BigQuery Table ID\",\n        \"simpleValueType\": true,\n        \"valueValidators\": [\n          {\n            \"type\": \"NON_EMPTY\"\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"type\": \"GROUP\",\n    \"name\": \"Attributes\",\n    \"displayName\": \"Provide list of attributes you would like to write in BigQuery table\",\n    \"groupStyle\": \"NO_ZIPPY\",\n    \"subParams\": [\n      {\n        \"type\": \"LABEL\",\n        \"name\": \"info\",\n        \"displayName\": \"Note: make sure your BigQuery Table schema uses the exact same field names as those you use in this tag. Also make sure that each BigQuery Field Name has the correct data type (e.g. timestamp field as integer etc.) \\u003c/br\\u003e\\u003c/br\\u003e\"\n      },\n      {\n        \"type\": \"CHECKBOX\",\n        \"name\": \"timestamp\",\n        \"checkboxText\": \"Write timestamp in BigQuery (format: milliseconds)\",\n        \"simpleValueType\": true\n      },\n      {\n        \"type\": \"TEXT\",\n        \"name\": \"timestampFieldName\",\n        \"displayName\": \"Provide Field Name from BigQuery table schema where you want to store the timestamp\",\n        \"simpleValueType\": true,\n        \"enablingConditions\": [\n          {\n            \"paramName\": \"timestamp\",\n            \"paramValue\": true,\n            \"type\": \"EQUALS\"\n          }\n        ]\n      },\n      {\n        \"type\": \"CHECKBOX\",\n        \"name\": \"date\",\n        \"checkboxText\": \"Write date in BigQuery (format: yyyy-mm-dd)\",\n        \"simpleValueType\": true\n      },\n      {\n        \"type\": \"TEXT\",\n        \"name\": \"dateFieldName\",\n        \"displayName\": \"Provide Field Name from BigQuery table schema where you want to store the date\",\n        \"simpleValueType\": true,\n        \"enablingConditions\": [\n          {\n            \"paramName\": \"date\",\n            \"paramValue\": true,\n            \"type\": \"EQUALS\"\n          }\n        ]\n      },\n      {\n        \"type\": \"SIMPLE_TABLE\",\n        \"name\": \"attributesList\",\n        \"displayName\": \"\",\n        \"simpleTableColumns\": [\n          {\n            \"defaultValue\": \"\",\n            \"displayName\": \"BigQuery Field Name\",\n            \"name\": \"field\",\n            \"type\": \"TEXT\",\n            \"selectItems\": [],\n            \"isUnique\": true,\n            \"valueValidators\": [\n              {\n                \"type\": \"NON_EMPTY\"\n              }\n            ],\n            \"macrosInSelect\": true\n          },\n          {\n            \"defaultValue\": \"\",\n            \"displayName\": \"Value\",\n            \"name\": \"value\",\n            \"type\": \"TEXT\",\n            \"macrosInSelect\": true,\n            \"valueValidators\": [\n              {\n                \"type\": \"NON_EMPTY\"\n              }\n            ]\n          }\n        ],\n        \"valueValidators\": [\n          {\n            \"type\": \"NON_EMPTY\",\n            \"errorMessage\": \"Please select at least 1 parameter\"\n          }\n        ]\n      }\n    ]\n  }\n]\n\n\n___SANDBOXED_JS_FOR_SERVER___\n\n/**\n * @license\n * Copyright 2024 Google LLC\n *\n * Licensed under the Apache License, Version 2.0 (the \"License\");\n * you may not use this file except in compliance with the License.\n * You may obtain a copy of the License at\n *\n *     http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing, software\n * distributed under the License is distributed on an \"AS IS\" BASIS,\n * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n * See the License for the specific language governing permissions and\n * limitations under the License.\n */\n\nconst BigQuery = require('BigQuery');\nconst getTimestampMillis = require('getTimestampMillis');\nconst JSON = require('JSON');\nconst log = require('logToConsole');\nconst Math = require('Math');\nconst getType = require('getType');\n\n// function for creating the date\nfunction createDateString(currentTimestamp) {\n  const timestampDays = Math.floor(currentTimestamp / 60 / 60 / 24 / 1000);\n  const days = timestampDays + 719468;\n  const era = Math.floor((days >= 0 ? days : days - 146096) / 146097);\n  const doe = days - era * 146097;\n  const yoe = Math.floor((doe + (-Math.floor(doe / 1460)) + Math.floor(doe / 36524) - Math.floor(doe / 146096)) / 365);\n  const y = yoe + era * 400;\n  const doy = doe - (365 * yoe + Math.floor(yoe / 4) - Math.floor(yoe / 100));\n  const mp = Math.floor((5 * doy + 2) / 153);\n  const d = 1 + doy - Math.floor(((153 * mp) + 2) / 5);\n  const m = mp < 10 ? mp + 3 : mp - 9;\n  let timeLeft = (currentTimestamp - (timestampDays * 60 * 60 * 24 * 1000)) / 1000;\n  const hours = Math.floor(timeLeft / 60 / 60);\n  timeLeft = timeLeft - hours * 60 * 60;\n  const minutes = Math.floor(timeLeft / 60);\n  timeLeft = timeLeft - minutes * 60;\n  const seconds = Math.floor(timeLeft);\n  timeLeft = timeLeft - seconds;\n  \n  function addZeroIfNeeded(number) {\n    if (number < 10) {\n      return '0' + number;\n    } else {\n      return '' + number;\n    }\n  }\n  const dateArray = {\n    year: y + (m <= 2),\n    month: addZeroIfNeeded(m),\n    day: addZeroIfNeeded(d),\n  };\n  return dateArray.year + \"-\" + dateArray.month + \"-\" + dateArray.day;\n}\n\n// creating timestamp and date variables\nconst currentTimestamp = getTimestampMillis();\nconst date = createDateString(currentTimestamp);\nconst eventData = {};\n\n// Adding timestamp into eventData object if it is checked\nif(data.timestamp){\n  eventData[data.timestampFieldName] = currentTimestamp ? currentTimestamp : null;\n}\n\n// Adding date into eventData object if it is checked\nif(data.date){\n  eventData[data.dateFieldName] = date ? date : null;\n\n}\n\n// Adding add attributes into eventData object\nif(data.attributesList) {\n  data.attributesList.forEach(param => {\n    eventData[param.field] = param.value ? param.value : null;\n  });\n}\n\n// Mock API returns a function, whereas usual import is object.\n// This logic enables support for tests within the function. See\n// https://developers.google.com/tag-platform/tag-manager/server-side/api#mock\nlet bigquery = BigQuery;\nif (getType(BigQuery) === \"function\"){\n  bigquery = BigQuery();\n}\n\n// Sending data to BigQuery\nbigquery.insert({\n  projectId: data.gcpProjectId,\n  datasetId: data.datasetId,\n  tableId: data.tableId,\n}, [eventData], {}, () => {\n  log('BigQuery Success: ', [eventData]);\n}, (errors) => {\n  log('BigQuery Failure: ', JSON.stringify(errors));\n  data.gtmOnFailure();\n});\n\n\ndata.gtmOnSuccess();\n\n\n___SERVER_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"debug\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_bigquery\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedTables\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"projectId\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"datasetId\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"tableId\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"operation\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"write\"\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios:\n- name: Test createDateString formats dates as expected\n  code: |-\n    addMockGetTimestampMillis(1704099600000);\n    addMockBigQueryWithDateCheck('20240101');\n\n    runCode(mockData);\n\n    addMockGetTimestampMillis(1709164800000);\n    addMockBigQueryWithDateCheck('20240229');\n\n    runCode(mockData);\nsetup: |-\n  const logToConsole = require('logToConsole');\n\n  // The tag configuration for the tests\n  let mockData = {\n    'gcpProjectId': 'my-project',\n    'datasetId': 'my_dataset',\n    'tableId': 'MyTable',\n    'timestamp': true,\n    'timestampFieldName': 'event_timestamp',\n    'date': true,\n    'dateFieldName': 'date'\n  };\n\n  /**\n   * Add mock BigQuery library to the test which tests date is expected value.\n   * @param {string} expectedDate - the expected value for the date.\n   */\n  function addMockBigQueryWithDateCheck(expectedDate){\n    mock('BigQuery', () => {\n      return {\n        'insert': (connectionInfo, rows) => {\n          logToConsole(connectionInfo);\n          logToConsole(rows);\n          assertThat(rows).hasLength(1);\n          assertThat(rows[0].date).isEqualTo(expectedDate);\n        }\n      };\n    });\n  }\n\n  /**\n   * Mock the timestamp functionality and return the given timestamp in millis.\n   * @param {number} timestampMillis - the timestamp in millis to use\n   */\n  function addMockGetTimestampMillis(timestampMillis){\n    mock('getTimestampMillis', () => {\n      return timestampMillis;\n    });\n  }\n\n\n___NOTES___\n\nCreated on 5/10/2024, 12:25:56 PM\n\n\n"
+            }
+        ]
+    }
+}
