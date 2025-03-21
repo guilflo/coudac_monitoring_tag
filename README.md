@@ -1,1 +1,18 @@
-# coudac_monitoring_tag
+# Coudac Monitoring Tag
+This tag's purpose is to record any conversion event of your choice to Coudac database in BigQuery.
+
+When importing it to your server-side container, you must use the merge option of your choice. Remember that the tag needs both built-in variable *Client Name* and *Event Name* to function properly.
+
+Then to take full advantage of the tag you can act on three aspects.
+### 1. Modifications to implement in the Variables section:
+- **Coudac Monitoring Tag - Client Name** specify here the exact naming convention of the customer. You'll need to use the exact same name in the Funnel sub-account of the customer.
+- **Coudac Monitoring Tag Event Filter**: by default this lookup table is set to record only two events type *purchase* and *generate_lead*. You can modify that filter to send others events.
+
+### 2. Make sure conversion events parameters match your current setup:
+- **User Data**: to record the estimated quality of events parameters, the tag sends both *email* and *phone_number* to the database in hash hex format (using Simo Ahava's hash variable template, which is included in this tag template as well). By default, the hashed values are taken from the usual GA4 user_data object from the Client Side container (*user_data.email* and *user_data.phone_number*). Remember that if you use a different scheme you'll need to update this. If you also sends data directly to the server container using webhooks, you can change the sha256 variables to hash the content of a lookup variable.
+- **Standard GA4 e-commerce variables**: the tag also sends when available *value*, *transaction_id* and *currency*, using by default GA4 naming convention. Again if you use a different scheme, don't forget to update the tag to send your own variables.
+
+### 3. Add other events parameters to the tag:
+As BigQuery is a SQL database, if you want to add another event parameters to the monitoring database, you'll need to edit the database scheme to do so. Just go to the correct table in BigQuery and add a new column using the correct format (*string*, *float*, *integer*). If you don't know which one to use you can either use GTM Server-Side container preview to check the Variable Type or you can go for a string type which will most of the time be convertible in BigQuery.
+
+Enjoy
