@@ -16,7 +16,7 @@ As most of our sGTM setups use Addingwell GCP Projects and our database is one o
 
 ![CleanShot 2025-03-21 at 12 16 20](https://github.com/user-attachments/assets/54aca7da-2609-4e99-a047-d08efa84fb77)
 
-This two simple steps will allow your tag to access our BigQuery monitoring database. If you have an 400 error when testing the tag, this is probably because you did not correctly implemented this step.
+This two simple steps will allow AW service account to access and write into our BigQuery monitoring database. If you have an 400 error when testing the tag, this is probably because you did not correctly implemented this step.
 
 ## Customize the tag to your needs
 
