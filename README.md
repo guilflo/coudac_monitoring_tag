@@ -1,5 +1,5 @@
 # Coudac Monitoring Tag
-This tag's purpose is to record any conversion event of your choice to Coudac database in BigQuery.
+This tag's purpose is to record any conversion event of your choice to Coudac database in BigQuery. This tag is greatly inspired from [sGTM Pantheon Chaos tag template](https://github.com/google-marketing-solutions/gps-sgtm-pantheon/blob/main/sgtm/chaos/README.md) and has been tailored to match Coudac specific analytics needs.
 
 ![CleanShot 2025-03-21 at 12 01 45](https://github.com/user-attachments/assets/8c605acb-ef5b-4079-9232-cf141d398db7)
 
@@ -7,7 +7,16 @@ When importing it to your server-side container, you must use the merge option o
 
 ## Authentification: Sharing access from sGTM to BigQuery
 
+As most of our sGTM setups use Addingwell GCP Projects and our database is one of our GCP project we need to share to Addingwell service account the right to write in one of our GCP Project. This is actually quite simple, just follow this two steps:
+1. Go to your Server-Side container user settings and copy the AW service account email address
 
+![CleanShot 2025-03-21 at 12 14 39](https://github.com/user-attachments/assets/08fcab1f-a022-45c7-9c15-3dec7176c35b)
+
+2. Then go to IAM in the Coudac GCP project and add Big Query Data Editor right to AW service account email address
+
+![CleanShot 2025-03-21 at 12 16 20](https://github.com/user-attachments/assets/54aca7da-2609-4e99-a047-d08efa84fb77)
+
+This two simple steps will allow your tag to access our BigQuery monitoring database. If you have an 400 error when testing the tag, this is probably because you did not correctly implemented this step.
 
 ## Customize the tag to your needs
 
