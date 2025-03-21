@@ -1,7 +1,11 @@
 # Coudac Monitoring Tag
 This tag's purpose is to record any conversion event of your choice to Coudac database in BigQuery.
 
+![CleanShot 2025-03-21 at 12 01 45](https://github.com/user-attachments/assets/8c605acb-ef5b-4079-9232-cf141d398db7)
+
 When importing it to your server-side container, you must use the merge option of your choice. Remember that the tag needs both built-in variable *Client Name* and *Event Name* to function properly.
+
+
 
 Then to take full advantage of the tag you can act on three aspects.
 ### 1. Modifications to implement in the Variables section:
